@@ -19,6 +19,11 @@ export const LayoutPage = () => {
       }, []);
     
     const [crop,setCrop] = useState({x:0,y:0, scale:1})
+    
+    const resetHandle = () =>{
+        setCrop({x:0,y:0, scale:1})
+    }
+
     const imageRef = useRef()
     useGesture({
         onDrag: ({offset: [dx,dy] })=>{
@@ -66,7 +71,7 @@ export const LayoutPage = () => {
                     }} 
                     className="map-img" 
                 />
-
+                <img src="./UI_Elements/reset_icon.png"  className='reset-icon' onClick={resetHandle} />
             </div>
         </div>
     </div>

@@ -92,3 +92,9 @@
 .back-button-LP{  
     height: 30px; /* Let the height adjust automatically */
 }
+
+.reset-icon{
+    position: absolute;
+    height: 50px;
+    bottom: 10%;
+}
