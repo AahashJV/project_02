@@ -1,0 +1,126 @@
+.Inner-frame-EP {
+    transform: translate(0%, -3%);
+    margin: auto;
+    border-radius: 25px;
+    background-image: url("./UI_Elements/BG_Pattern.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #F1F2F2;
+    background-repeat: no-repeat;
+    width: 85%;
+    height: 80%;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center content */
+}
+
+.II-logo-EP{
+    top: 20px;
+    position: relative;
+    height: 35px;
+}
+
+.heading-EP {
+    top: 10px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem; /* Adjust font size as needed */
+    margin-top: 20px; /* Adjust spacing */
+}
+
+/* Card Buttons */
+
+
+
+.Values-card {
+    margin-top: 10px; /* Adjust spacing */
+    display: flex; /* Set display to flex */
+    border-radius: 6px; /* Add rounded corners */
+    overflow: hidden; /* Ensure child elements don't overflow rounded corners */
+}
+
+.red-card,
+.purple-card {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    display: flex; /* Set display to flex */
+    align-items: center; /* Align items vertically center */
+    justify-content: center; /* Horizontally center the content */
+}
+
+.red-card {
+    flex: 7; /* Take 70% of the available space */
+    color: #FFE669; /* Add text color for better contrast */
+    background-color: #EA2227;
+}
+
+.purple-card {
+    flex: 3; /* Take 30% of the available space */
+    color: #FFFFFF;
+    background-color: #77569F;
+}
+
+
+.border-card {
+    width: auto;
+    margin-top: 10px; /* Adjust spacing */
+    height: 7px;
+}
+
+.buttons-container {
+    text-align: center; /* Align text content center */
+    display: flex; /* Set display to flex */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center items horizontally */
+    height: 80%; /* Ensure container takes full height */
+    width: 90%; /* Set width */
+    border-radius: 15px; /* Add rounded corners */
+    margin-top: 20px; /* Adjust spacing */
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
+    overflow-y: scroll;
+}
+
+.button-card {
+    margin-top: 20px; /* Adjust spacing */
+    height: auto; /* Allow height to adjust based on content */
+    width: 95%; /* Ensure all cards have the same width */
+    max-width: 500px; /* Add maximum width for responsiveness */
+}
+
+.back-button-container-EP {
+    position: absolute; /* Position the button */
+    top: 7%; /* Adjust top position as needed */
+    right: 5%; /* Adjust left position as needed */
+    cursor: pointer; /* Show pointer cursor on hover */
+    z-index: 999; /* Ensure the button appears above other elements */
+}
+
+.back-button-EP {
+    height: 30px; /* Let the height adjust automatically */
+}
+
+
+
+.COI-logo-EP{
+    position: absolute;
+    height: 150px;
+    bottom: 0%;
+}
+
+
+.buttons-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.buttons-container::-webkit-scrollbar-thumb {
+    background-color: #E7C16D; /* Set color of the scrollbar thumb */
+    border-radius: 6px; /* Add rounded corners to the thumb */
+}
+
+.buttons-container::-webkit-scrollbar-track {
+    background-color: #EA2227; /* Set color of the scrollbar track */
+    border-radius: 6px; /* Add rounded corners to the track */
+}

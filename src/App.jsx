@@ -1,32 +1,51 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useRef } from 'react'
 import './App.css'
-import { Link, Outlet } from 'react-router-dom'
+import { Home } from './pages/Home'
+import { Outlet } from 'react-router-dom'
+
+
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const divRef = useRef()
+
+
+  const enterFullscreen = () => {
+    const elem = divRef.current;
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { // Firefox
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { // Chrome, Safari, and Opera
+      elem.webkitRequestFullscreen();
+    }
+  };
+
+  const exitFullscreen = () => {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.mozCancelFullScreen) { // Firefox
+      document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) { // Chrome, Safari, and Opera
+      document.webkitExitFullscreen();
+    }
+  };
+
+  const handleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      enterFullscreen();
+    } else {
+      exitFullscreen();
+    }
+  };
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div ref={divRef} className='app-div' >
+        <img src='./UI_Elements/fullscreenicon.png' className="fullscreen-img" onClick={handleFullscreen} />
+        <Outlet/>
       </div>
-      <h1>Vite + React</h1>
-      <nav>
-        <Link to='/project_02/' >Home</Link>
-        <Link to='/project_02/Contact' >Contact</Link>
-
-      </nav>
-      <Outlet/>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }

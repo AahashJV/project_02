@@ -1,0 +1,135 @@
+
+/* Overall Parent */
+.Home {
+  text-align: center;
+  background-image: url("./UI_Elements/BG_Pattern.png");
+  background-color: #007D72;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+/* InnerFrame - WhiteColor */
+.Inner-frame {
+  transform: translate(0%, -3%);
+  margin: auto;
+  border-radius: 25px;
+  background-image: url("./UI_Elements/BG_Pattern.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #F1F2F2;
+  background-repeat: no-repeat;
+  width: 85%;
+  height: 80%;
+  text-align: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+/* Inner-Building Image */
+.layout-image{
+  position: relative;
+  height: 10%;
+  top: 90%;
+  text-align: center;
+}
+
+/* Overall UI Container */
+.UI-container {
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Layout Buttom Container */
+.Layout-Icon-container {
+  position: relative;
+  margin-bottom: 0px;
+}
+.Layout-Icon {
+  height: 130px;
+}
+
+
+/* Exhibitor Buttom Container */
+.Exhibitor-list-container {
+  position: relative;
+  margin-top: 0px;
+}
+.Exhibitor-list {
+  height: 130px;
+}
+
+/* Incrideble India Container */
+.II-Logo-container {
+  position: relative;
+  background: #FFE424;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.II-logo {
+  position: relative;
+  top: 15%;
+  height: 40px;
+}
+
+/* Color of India Container */
+.COI-logo-container{
+  bottom: 10px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: bottom;
+  position: absolute;
+  height: 120px;
+  text-align: center;
+
+}
+.COI-logo{
+  bottom: 0px;
+  position: relative;
+  height: 120px;
+
+}
+
+/* RightMan Container */
+.Rightman-container{
+  left: 78%;
+  bottom: 2%;
+  justify-content: center;
+  position: absolute;
+  height: 150px;
+  text-align: center;
+
+}
+.Rightman{
+  height: 150px;
+
+}
+
+/* LeftMan Container */
+.Leftman-container{
+  right: 78%;
+  bottom: 2%;
+  justify-content: center;
+  position: absolute;
+  height: 150px;
+  text-align: center;
+
+}
+.Leftman{
+  /* position: relative; */
+  height: 150px;
+
+}
+

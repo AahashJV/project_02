@@ -1,0 +1,77 @@
+/* Layout.css */
+
+/* Define styles for the layout page */
+.layout-container {
+    user-select: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  /* Style for the image container */
+  .image-container {
+    position: relative;
+  }
+  
+  /* Style for the hotspots */
+  .hotspot {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Make it round */
+    cursor: pointer;
+  }
+  
+  /* Style for the popup container */
+  .popup-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Style for the popup */
+  .popup {
+    background-color: #ffffff; /* White background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow for depth */
+  }
+  
+  /* Style for the close button */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+  }
+  
+  /* Style for the popup content */
+  .popup-content {
+    
+    color: #333; /* Text color */
+  }
+  
+  /* Style for the back button */
+  .back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

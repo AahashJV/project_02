@@ -1,0 +1,84 @@
+
+.exhibitor-container {
+    
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -moz-user-select:none; /* firefox */
+   -webkit-user-select: none; /* Safari */
+   -ms-user-select: none; /* IE*/
+    user-select: none;
+    width: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif; /* Change font */
+    text-align: center; /* Align heading and buttons */
+  }
+  
+  .exhibitor-heading {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .image-button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    transition: filter 0.2s; /* Add transition for smoother effect */
+  }
+
+  
+  .image-button.blur {
+    filter: blur(5px); /* Apply blur effect */
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 999; /* Ensure the popup is above other content */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add box shadow */
+  }
+  
+  .popup-image {
+    max-width: 80vw; /* Adjust image size */
+    max-height: 80vh;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+  }
+  
+  .back-button {
+    /* margin-top: 20px; */
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background-color: #333;
+  }
+  
